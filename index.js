@@ -7,7 +7,9 @@ const { CloudinaryStorage } = require('multer-storage-cloudinary');
 require('dotenv').config();
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: 'https://outfit-generator-sx51.onrender.com' // Your Frontend URL
+}));
 app.use(express.json());
 
 // 1. CLOUDINARY CONFIG (Get these from cloudinary.com)
