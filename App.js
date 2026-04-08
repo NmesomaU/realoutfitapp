@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
 import { Sparkles, Plus, Trash2, LayoutGrid, Check, RefreshCcw, X, LogIn, UserPlus } from 'lucide-react';
 
-const API_BASE = "https://outfit-generator-sx51.onrender.com";
+const API_BASE = "https://outfit-gen.onrender.com";
 
 function Auth() {
   const [isLogin, setIsLogin] = useState(true);
